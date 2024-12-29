@@ -1,28 +1,22 @@
 import { SocialLink } from '../types/social';
-import { Dribbble, Twitter, Twitch, Facebook, Instagram } from 'lucide-react';
+import { Dribbble, Twitter, Github, Linkedin, Instagram } from 'lucide-react';
 
 export const socialLinks: SocialLink[] = [
   {
-    icon: Dribbble,
-    href: '#',
-    color: 'bg-pink-500',
-    hoverColor: 'hover:bg-pink-600'
-  },
-  {
     icon: Twitter,
-    href: '#',
+    href: 'https://x.com/sky_walker_421',
     color: 'bg-[#1DA1F2]',
     hoverColor: 'hover:bg-[#1a8cd8]'
   },
   {
-    icon: Twitch,
-    href: '#',
-    color: 'bg-purple-600',
-    hoverColor: 'hover:bg-purple-700'
+    icon: Github,
+    href: 'https://github.com/DivyanshuShekhar55',
+    color: 'bg-black',
+    hoverColor: 'hover:bg-black'
   },
   {
-    icon: Facebook,
-    href: '#',
+    icon: Linkedin,
+    href: 'https://www.linkedin.com/in/divyanshu-shekhar-19a709292',
     color: 'bg-blue-600',
     hoverColor: 'hover:bg-blue-700'
   },
@@ -31,5 +25,11 @@ export const socialLinks: SocialLink[] = [
     href: '#',
     color: 'bg-pink-600',
     hoverColor: 'hover:bg-pink-700'
+  },
+  {
+    icon: Dribbble,
+    href: 'https://dribbble.com/Div42#',
+    color: 'bg-pink-500',
+    hoverColor: 'hover:bg-pink-600'
   }
 ];
