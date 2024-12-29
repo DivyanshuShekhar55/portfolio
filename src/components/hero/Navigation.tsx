@@ -13,7 +13,7 @@ export default function Navigation() {
   return (
     <nav className="max-w-7xl mx-auto flex justify-between items-center py-6 relative z-50">
       <div className="flex items-center">
-        <span className="text-[#c8ff00] text-2xl font-bold">Fragile.</span>
+        <span className="text-[#c8ff00] text-2xl font-bold">Live. Life.</span>
       </div>
 
       {/* Mobile Menu Button */}
