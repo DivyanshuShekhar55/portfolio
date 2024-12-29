@@ -52,10 +52,6 @@ export default function Navigation() {
         </button>
       </div>
 
-      <button className="hidden lg:block px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-all">
-        Sign In
-      </button>
-
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="absolute top-full left-0 right-0 bg-[#111111] border-t border-gray-800 p-4 lg:hidden">
@@ -84,9 +80,7 @@ export default function Navigation() {
             >
               Connect
             </button>
-            <button className="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-all w-full">
-              Sign In
-            </button>
+
           </div>
         </div>
       )}

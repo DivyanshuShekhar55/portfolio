@@ -20,7 +20,6 @@ export default function Navbar() {
           <a href="#awards" className="text-white hover:text-gray-200">AWARDS</a>
         </div>
         
-
       </div>
     </nav>
   );
