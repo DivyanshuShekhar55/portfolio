@@ -20,17 +20,7 @@ export default function Navbar() {
           <a href="#awards" className="text-white hover:text-gray-200">AWARDS</a>
         </div>
         
-        <div className="flex items-center space-x-4">
-          <a href="#" className="text-white hover:text-gray-200 bg-[#ffffff20] p-2 rounded-full">
-            <Facebook size={20} />
-          </a>
-          <a href="#" className="text-white hover:text-gray-200 bg-[#ffffff20] p-2 rounded-full">
-            <Youtube size={20} />
-          </a>
-          <a href="#" className="text-white hover:text-gray-200 bg-[#ffffff20] p-2 rounded-full">
-            <Twitter size={20} />
-          </a>
-        </div>
+
       </div>
     </nav>
   );
