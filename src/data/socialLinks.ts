@@ -22,7 +22,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     icon: Instagram,
-    href: '#',
+    href: 'https://www.instagram.com/feelin_divyansh?igsh=MnBzOWV0cmtjaW8x',
     color: 'bg-pink-600',
     hoverColor: 'hover:bg-pink-700'
   },

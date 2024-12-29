@@ -1,9 +1,9 @@
 import { ArrowUpRight } from 'lucide-react';
 import { Project } from '../types/project';
 
-export default function ProjectCard({ number, title, description, image, category }: Project) {
+export default function ProjectCard({ number, title, description, image, category, href }: Project) {
   return (
-    <div className="group cursor-pointer min-w-[280px]">
+    <a key={number} href={href} className="group cursor-pointer min-w-[280px]">
       <div className="relative overflow-hidden rounded-3xl">
         <img 
           src={image} 
@@ -22,6 +22,6 @@ export default function ProjectCard({ number, title, description, image, categor
           <p className="text-gray-600">{description}</p>
         </div>
       </div>
-    </div>
+    </a>
   );
 }
