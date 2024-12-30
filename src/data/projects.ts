@@ -1,4 +1,7 @@
 import { Project } from '../types/project';
+import Sentimatrix from "../assests/Sentimatrix.jpg"
+import flappy from "../assests/flap-py.png"
+import screen from "../assests/screen-ai.png"
 
 export const projects: Project[] = [
   {
@@ -6,7 +9,7 @@ export const projects: Project[] = [
     number: "01",
     title: "Flappy Pushups",
     description: "Flappy Bird game ... But you play while doing pushups. ",
-    image: "https://images.unsplash.com/photo-1573221566340-81bdde00e00b?auto=format&fit=crop&q=80",
+    image: flappy,
     category: "PyGame • Computer Vision",
     href:"https://github.com/DivyanshuShekhar55/flap-py"
   },
@@ -15,7 +18,7 @@ export const projects: Project[] = [
     number: "02",
     title: "Sentimatrix",
     description: "Analyses customer reviews and generates a comprehensive summary for Product Teams. Segregates Negative Emails with a Sentiment Score. Developed with a team of talented guys.",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80",
+    image: Sentimatrix,
     category: "C# • Llama • MongoDB",
     href:"https://github.com/AdityaP700/Sentimatrix"
   },
@@ -24,8 +27,8 @@ export const projects: Project[] = [
     number: "03",
     title: "Smart Clipboard",
     description: "Stores a history of clipboard data, AI powered, and supports Multiple Screenshots. Currently in developmental phase.",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80",
-    category: "Tauri ( Rust + React )",
+    image: screen,
+    category: "Tauri • Rust • React ",
     href:"https://github.com/DivyanshuShekhar55/screen-write-AI"
   },
   {

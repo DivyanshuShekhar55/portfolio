@@ -15,6 +15,7 @@ export default function SocialSection() {
                 <a
                   key={index}
                   href={social.href}
+                  target='_blank'
                   className={`${social.color} ${social.hoverColor} w-16 h-16 md:w-24 md:h-24 rounded-2xl flex items-center justify-center transform transition-all duration-300 hover:scale-110 group relative`}
                 >
                   <Icon size={24} className="text-white md:w-9 md:h-9" />

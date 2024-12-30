@@ -18,14 +18,14 @@ export default function HeroContent() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
         <div className="bg-[#ff4d4d] p-8 rounded-2xl">
-          <h3 className="text-white text-xl font-bold mb-2">MERN, TS, Tailwind, NextJS, React Native</h3>
-          <p className="text-white/80">Developer</p>
+          <h3 className="text-white text-xl font-bold mb-2">Chill Developer  🖥️</h3>
+          <p className="text-white/80">MERN, React Native, TS, Tailwind</p>
           <ArrowRight className="text-white mt-4" />
         </div>
 
         <div className="bg-[#c8ff00] p-8 rounded-2xl">
-          <h3 className="text-black text-xl font-bold mb-2">Go, Rust, C++, ML</h3>
-          <p className="text-black/80">Programmer</p>
+          <h3 className="text-black text-xl font-bold mb-2">Building the Future 🚀</h3>
+          <p className="text-black/80">Go, Rust, C++, ML</p>
           <ArrowRight className="text-black mt-4" />
         </div>
       </div>
