@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import me from "../../assests/main.png"
 
 export default function HeroContent() {
   return (
@@ -9,7 +10,7 @@ export default function HeroContent() {
         <div className="flex items-center gap-4">
         DEVELOPER
           <img 
-            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=100" 
+            src={me} 
             alt="Small profile" 
             className="w-16 h-16 rounded-full object-cover"
           />

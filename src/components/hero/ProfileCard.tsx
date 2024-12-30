@@ -1,12 +1,14 @@
 import React from 'react';
+//import me from "../../assests/me.jpg"
+import me from "../../assests/main.png"
 
 export default function ProfileCard() {
   return (
     <div className="bg-white rounded-3xl p-6 max-w-md mx-auto lg:mx-0">
       <img 
-        src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=500" 
+        src={me}
         alt="Profile" 
-        className="w-full h-64 object-cover rounded-2xl mb-4"
+        className="w-full h-64 rounded-2xl mb-4 object-cover"
       />
       <h2 className="text-4xl font-bold mb-2">Divyanshu Shekhar</h2>
       <p className="text-gray-600 uppercase mb-6">Web Dev || Backend Dev || Mobile Dev ||</p>
