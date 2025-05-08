@@ -11,7 +11,7 @@ export const achievements: Achievement[] = [
   {
     year: '2023',
     logo: 'https://images.unsplash.com/photo-1567446537708-ac4aa75c9c28?auto=format&fit=crop&q=80&w=100',
-    title: 'Runner Ups @Composit',
+    title: '2nd Runner Ups @Composit',
     location: 'IIT Kharagpur, IN',
     category: 'Business Ideathon'
   },

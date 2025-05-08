@@ -2,6 +2,7 @@ import { Project } from '../types/project';
 import Sentimatrix from "../assests/Sentimatrix.jpg"
 import flappy from "../assests/flap-py.png"
 import screen from "../assests/screen-ai.png"
+import server from "../assests/server.png"
 
 export const projects: Project[] = [
   {
@@ -34,6 +35,15 @@ export const projects: Project[] = [
   {
     id: 4,
     number: "04",
+    title: "Http Server",
+    description: "Http Server created from SCRATCH in Golang",
+    image: server,
+    category: "Golang",
+    href:"https://github.com/DivyanshuShekhar55/go-httpx"
+  },
+  {
+    id: 5,
+    number: "05",
     title: "Lets Go",
     description: "Repo with lots of examples and programs to master programming in Go. Also includes a bunch of great resources. ",
     image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80",
