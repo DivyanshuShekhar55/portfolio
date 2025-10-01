@@ -1,4 +1,3 @@
-import React from 'react';
 import ProfileCard from './hero/ProfileCard';
 import HeroContent from './hero/HeroContent';
 import Navigation from './hero/Navigation';
