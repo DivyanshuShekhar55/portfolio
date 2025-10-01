@@ -14,7 +14,7 @@ export default function ProfileCard() {
         <h2 className="text-3xl font-bold mb-2 text-center">Divyanshu Shekhar</h2>
         <p className="text-gray-600 uppercase mb-4 text-sm font-medium text-center">Web Dev || Backend Dev || Mobile Dev</p>
         <p className="text-gray-700 text-center leading-relaxed">
-          Sophomore @ IIIT BBSR. I ❤️ Building ... whether it's mobile, web, backend architectures. I love to learn a lot. If you got a great idea, lets build it together 🚀
+          Student @ IIIT BBSR. I ❤️ Building ... whether it's mobile, web, backend architectures. I love to learn a lot. If you got a great idea, lets build it together 🚀
         </p>
       </div>
       <div className="absolute -bottom-4 right-4 w-8 h-8 bg-[#ff4d4d] rounded-full" />
