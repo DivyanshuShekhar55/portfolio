@@ -1,5 +1,5 @@
 import { SocialLink } from '../types/social';
-import { Dribbble, Twitter, Github, Linkedin, Instagram } from 'lucide-react';
+import { Dribbble, Twitter, Github, Linkedin, Instagram, FileSignature } from 'lucide-react';
 
 export const socialLinks: SocialLink[] = [
   {
@@ -21,15 +21,15 @@ export const socialLinks: SocialLink[] = [
     hoverColor: 'hover:bg-blue-700'
   },
   {
-    icon: Instagram,
-    href: 'https://www.instagram.com/feelin_divyansh?igsh=MnBzOWV0cmtjaW8x',
-    color: 'bg-pink-600',
-    hoverColor: 'hover:bg-pink-700'
-  },
-  {
     icon: Dribbble,
     href: 'https://dribbble.com/Div42#',
     color: 'bg-pink-500',
     hoverColor: 'hover:bg-pink-600'
+  },
+  {
+    icon: FileSignature,
+    href: 'https://medium.com/@shekdivyanshu',
+    color: 'bg-black',
+    hoverColor: 'hover:bg-black-600'
   }
 ];
