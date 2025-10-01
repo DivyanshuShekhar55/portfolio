@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react';
 
 const technologies = [
-  "React", "TypeScript", "Node.js", "Python", "JavaScript", "C++", 
+  "React", "CassandraDB", "Node.js", "JavaScript", "C++", 
   "MongoDB", "PostgreSQL", "Redis",
-  "Next.js", "TailwindCSS", "Git", "Golang", "Rust", "Machine Learning", "C", "UI", "Docker", "React Native"
+  "Elasticsearch", "TailwindCSS", "Git", "Golang", "C", "UI", "Docker", "React Native"
 ];
 
 export default function TechBanner() {
