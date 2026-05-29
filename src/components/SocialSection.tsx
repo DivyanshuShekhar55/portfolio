@@ -2,7 +2,7 @@ import { socialLinks } from '../data/socialLinks';
 
 export default function SocialSection() {
   return (
-    <section id="socials" className="relative py-16 md:py-24">
+    <section id="socials" className="relative py-12 md:py-24">
       <div className="mx-auto max-w-7xl px-4">
         <div className="flex flex-col items-center justify-between gap-10 rounded-[2.5rem] border border-white/10 bg-transparent p-8 md:flex-row md:p-12">
           <h2 className="text-center text-4xl font-bold leading-tight tracking-tight text-white md:text-left md:text-7xl">
