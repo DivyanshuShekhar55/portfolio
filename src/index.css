@@ -12,7 +12,7 @@
   body {
     font-family: 'Inter', sans-serif;
     color: #e6eef8;
-    background-color: #000000; /* solid black background */
+    background-color: #03020b; /* deep near-black background */
     min-height: 100vh;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;

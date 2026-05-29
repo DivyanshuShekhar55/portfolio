@@ -24,13 +24,13 @@ export default function AchievementItem({
   return (
     <div 
       className={`flex cursor-pointer items-center gap-5 rounded-[2rem] border border-slate-800 p-5 transition-all duration-300 md:gap-6 md:p-6 ${
-        isHighlighted ? 'bg-[#0b1220] shadow-[0_20px_60px_rgba(0,0,0,0.6)] md:translate-x-2' : 'bg-[#071026] hover:bg-[#0b1220]'
+        isHighlighted ? 'bg-[#0b1220] shadow-[0_20px_60px_rgba(0,0,0,0.6)] md:translate-x-2' : 'bg-[#03020b] hover:bg-[#0b1220]'
       }`}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
       <span className={`text-xl font-medium transition-colors duration-300 ${
-        isHighlighted ? 'text-[#f47c57]' : 'text-white/70'
+        isHighlighted ? 'text-[#f0f98f]' : 'text-white/70'
       }`}>{year}</span>
       
       <div className="flex-1">
@@ -39,23 +39,20 @@ export default function AchievementItem({
         }`}>{title}</h3>
         <div className="flex flex-wrap items-center gap-3 md:gap-5">
           <div className={`flex items-center gap-2 transition-colors duration-300 ${
-            isHighlighted ? 'text-[#f47c57]' : 'text-white/70'
+            isHighlighted ? 'text-[#f0f98f]' : 'text-white/70'
           }`}>
             <MapPin size={18} />
             <span>{location}</span>
           </div>
           <div className={`flex items-center gap-2 transition-colors duration-300 ${
-            isHighlighted ? 'text-[#f47c57]' : 'text-white/70'
+            isHighlighted ? 'text-[#f0f98f]' : 'text-white/70'
           }`}>
             <MessageCircle size={18} />
             <span>{category}</span>
           </div>
         </div>
       </div>
-      
-      <ArrowRight className={`transition-colors duration-300 ${
-        isHighlighted ? 'text-[#f47c57]' : 'text-slate-400'
-      }`} size={24} />
+
     </div>
   );
 }

@@ -9,7 +9,6 @@ export default function ProjectCard({
   category,
   href,
 }: Project) {
-  const tags = (category || '').split('•').map(t => t.trim()).filter(Boolean);
   return (
     <a
       key={number}
@@ -34,20 +33,12 @@ export default function ProjectCard({
       </div>
  
         <div className="mt-5 space-y-3 px-1">
+          <div className="flex items-center gap-3">
+            <span className="inline-block rounded-full bg-[#1f1b18] px-3 py-1 text-sm font-semibold text-white/80">{category}</span>
+          </div>
           <div>
-            <h3 className="mb-2 text-2xl font-bold text-[#f47c57]">{title}</h3>
+            <h3 className="mb-2 text-2xl font-bold text-[white]">{title}</h3>
             <p className="leading-7 text-white/70">{description}</p>
-
-            <div className="mt-3 flex flex-wrap gap-2">
-              {tags.map((tag, i) => (
-                <span
-                  key={i}
-                  className="inline-flex items-center rounded-full border border-slate-700/50 bg-[#0b1220] px-3 py-1 text-xs font-semibold text-white/80"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
           </div>
         </div>
     </a>

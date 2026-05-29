@@ -32,7 +32,7 @@ export default function ProjectsSection() {
         <SectionHeader 
           title="SELECTED"
           subtitle="PROJECTS"
-          accentColor="text-[#f47c57]"
+          accentColor="text-[#f98ff0]"
         />
         
         <div className="relative">

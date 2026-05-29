@@ -16,7 +16,7 @@ export default function SocialSection() {
                   key={index}
                   href={social.href}
                   target='_blank'
-                  className="group relative flex h-16 w-16 items-center justify-center rounded-[1.5rem] border border-slate-900/10 bg-slate-900 text-white shadow-[0_14px_40px_rgba(15,23,42,0.14)] transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-[#f47c57] md:h-24 md:w-24"
+                  className="group relative flex h-16 w-16 items-center justify-center rounded-[1.5rem] border border-white/10 bg-[#03020b] text-white shadow-[0_8px_24px_rgba(0,0,0,0.5)] transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-[#f47c57] md:h-24 md:w-24"
                 >
                   <Icon size={24} className="text-white md:w-9 md:h-9" />
                   <div className="absolute -bottom-2 left-1/2 h-4 w-4 -translate-x-1/2 rounded-full bg-[#ffd66b] opacity-0 transition-opacity group-hover:opacity-100" />

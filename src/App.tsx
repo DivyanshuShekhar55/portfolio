@@ -1,4 +1,4 @@
-import React from "react";
+
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import ProjectsSection from "./components/ProjectsSection";
@@ -9,9 +9,9 @@ import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
-    <main className="relative isolate overflow-hidden text-white">
-
-      <HeroSection />
+    <main className="relative isolate overflow-hidden text-white bg-[#03020b]" >
+      <Navbar/>
+      <HeroSection/>
       <ProjectsSection />
       <TechBanner />
       <Achievements />

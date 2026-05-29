@@ -29,7 +29,7 @@ export default function ProjectNavigation({
         </button>
         <button 
           onClick={onNext}
-          className="rounded-full border border-slate-800 bg-[#ff7c57e6] p-3 text-white/70 transition-all hover:-translate-y-0.5 hover:bg-[#0b1220] hover:text-white"
+          className="rounded-full border border-slate-800 bg-[#f98ff0] p-3 text-white/70 transition-all hover:-translate-y-0.5 hover:bg-[#0b1220] hover:text-white"
         >
           <ArrowRight size={24} />
         </button>
