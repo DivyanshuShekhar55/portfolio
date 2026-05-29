@@ -4,15 +4,16 @@ import Navigation from './hero/Navigation';
 
 export default function HeroSection() {
   return (
-    <div id="home" className="min-h-screen bg-[#111111] relative overflow-hidden px-4 pb-12">
+    <div id="home" className="relative overflow-hidden px-4 pb-16 pt-28 md:pb-20 md:pt-32">
+
       <Navigation />
-      
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 mt-12">
+
+      <div className="mx-auto mt-14 grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center">
         <div className="relative order-2 lg:order-1">
           <ProfileCard />
         </div>
 
-        <div className="pt-8 lg:pt-20 order-1 lg:order-2">
+        <div className="order-1 pt-2 lg:order-2 lg:pt-12">
           <HeroContent />
         </div>
       </div>

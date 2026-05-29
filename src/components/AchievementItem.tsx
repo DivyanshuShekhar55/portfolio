@@ -23,33 +23,29 @@ export default function AchievementItem({
 }: AchievementItemProps) {
   return (
     <div 
-      className={`flex items-center gap-6 p-6 rounded-2xl transition-all duration-300 cursor-pointer ${
-        isHighlighted ? 'bg-white shadow-xl scale-[1.02]' : 'hover:bg-white/5'
+      className={`flex cursor-pointer items-center gap-5 rounded-[2rem] border border-slate-800 p-5 transition-all duration-300 md:gap-6 md:p-6 ${
+        isHighlighted ? 'bg-[#0b1220] shadow-[0_20px_60px_rgba(0,0,0,0.6)] md:translate-x-2' : 'bg-[#071026] hover:bg-[#0b1220]'
       }`}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
       <span className={`text-xl font-medium transition-colors duration-300 ${
-        isHighlighted ? 'text-[#ff5943]' : 'text-white/80'
+        isHighlighted ? 'text-[#f47c57]' : 'text-white/70'
       }`}>{year}</span>
       
-      <div className="w-12 h-12 flex items-center justify-center bg-white rounded-xl">
-        <img src={logo} alt={title} className="w-full h-full object-contain p-2" />
-      </div>
-      
       <div className="flex-1">
-        <h3 className={`text-2xl font-bold mb-2 transition-colors duration-300 ${
-          isHighlighted ? 'text-[#ff5943]' : 'text-white'
+        <h3 className={`mb-2 text-xl font-bold transition-colors duration-300 md:text-2xl ${
+          isHighlighted ? 'text-white' : 'text-white'
         }`}>{title}</h3>
-        <div className="flex flex-wrap items-center gap-4 md:gap-6">
+        <div className="flex flex-wrap items-center gap-3 md:gap-5">
           <div className={`flex items-center gap-2 transition-colors duration-300 ${
-            isHighlighted ? 'text-[#ff5943]' : 'text-yellow-300'
+            isHighlighted ? 'text-[#f47c57]' : 'text-white/70'
           }`}>
             <MapPin size={18} />
             <span>{location}</span>
           </div>
           <div className={`flex items-center gap-2 transition-colors duration-300 ${
-            isHighlighted ? 'text-[#ff5943]' : 'text-yellow-300'
+            isHighlighted ? 'text-[#f47c57]' : 'text-white/70'
           }`}>
             <MessageCircle size={18} />
             <span>{category}</span>
@@ -58,7 +54,7 @@ export default function AchievementItem({
       </div>
       
       <ArrowRight className={`transition-colors duration-300 ${
-        isHighlighted ? 'text-[#ff5943]' : 'text-yellow-300'
+        isHighlighted ? 'text-[#f47c57]' : 'text-slate-400'
       }`} size={24} />
     </div>
   );

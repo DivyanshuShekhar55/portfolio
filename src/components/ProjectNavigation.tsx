@@ -14,22 +14,22 @@ export default function ProjectNavigation({
   onNext 
 }: ProjectNavigationProps) {
   return (
-    <div className="flex items-center justify-between mt-12 border-t border-gray-200 pt-8">
-      <div className="text-2xl font-bold">
+    <div className="mt-12 flex items-center justify-between rounded-[2rem] px-5 py-4 shadow-[0_18px_50px_rgba(0,0,0,0.6)]">
+      <div className="text-2xl font-bold text-white">
         {currentPage.toString().padStart(2, '0')}
-        <span className="text-gray-400 text-lg">/{totalPages.toString().padStart(2, '0')}</span>
+        <span className="text-lg text-white/70">/{totalPages.toString().padStart(2, '0')}</span>
       </div>
       
       <div className="flex gap-4">
         <button 
           onClick={onPrev}
-          className="p-3 rounded-full border border-gray-200 hover:border-[#FF4D4D] hover:text-[#FF4D4D] transition-colors"
+          className="rounded-full border border-slate-800 bg-[#071026] p-3 text-white/70 transition-all hover:-translate-y-0.5 hover:bg-[#0b1220] hover:text-white"
         >
           <ArrowLeft size={24} />
         </button>
         <button 
           onClick={onNext}
-          className="p-3 rounded-full border border-gray-200 hover:border-[#FF4D4D] hover:text-[#FF4D4D] transition-colors"
+          className="rounded-full border border-slate-800 bg-[#ff7c57e6] p-3 text-white/70 transition-all hover:-translate-y-0.5 hover:bg-[#0b1220] hover:text-white"
         >
           <ArrowRight size={24} />
         </button>

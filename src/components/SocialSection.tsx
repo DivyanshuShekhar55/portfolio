@@ -2,13 +2,13 @@ import { socialLinks } from '../data/socialLinks';
 
 export default function SocialSection() {
   return (
-    <section id="socials" className="bg-[#00ff9d] py-12 md:py-24">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-          <h2 className="text-4xl md:text-7xl font-bold text-white leading-tight text-center md:text-left">
+    <section id="socials" className="relative py-20 md:py-28">
+      <div className="mx-auto max-w-7xl px-4">
+        <div className="flex flex-col items-center justify-between gap-10 rounded-[2.5rem] border border-white/10 bg-transparent p-8 md:flex-row md:p-12">
+          <h2 className="text-center text-4xl font-bold leading-tight tracking-tight text-white md:text-left md:text-7xl">
             You can<br />find me<br />here:
           </h2>
-          <div className="grid grid-cols-2 md:flex items-center gap-4 md:gap-6">
+          <div className="grid grid-cols-2 items-center gap-4 md:flex md:gap-6">
             {socialLinks.map((social, index) => {
               const Icon = social.icon;
               return (
@@ -16,10 +16,10 @@ export default function SocialSection() {
                   key={index}
                   href={social.href}
                   target='_blank'
-                  className={`${social.color} ${social.hoverColor} w-16 h-16 md:w-24 md:h-24 rounded-2xl flex items-center justify-center transform transition-all duration-300 hover:scale-110 group relative`}
+                  className="group relative flex h-16 w-16 items-center justify-center rounded-[1.5rem] border border-slate-900/10 bg-slate-900 text-white shadow-[0_14px_40px_rgba(15,23,42,0.14)] transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-[#f47c57] md:h-24 md:w-24"
                 >
                   <Icon size={24} className="text-white md:w-9 md:h-9" />
-                  <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute -bottom-2 left-1/2 h-4 w-4 -translate-x-1/2 rounded-full bg-[#ffd66b] opacity-0 transition-opacity group-hover:opacity-100" />
                 </a>
               );
             })}

@@ -9,6 +9,7 @@ const technologies = [
 export default function TechBanner() {
   const row1Ref = useRef<HTMLDivElement>(null);
   const row2Ref = useRef<HTMLDivElement>(null);
+  const reversedTechnologies = [...technologies].reverse();
 
   useEffect(() => {
     const row1 = row1Ref.current;
@@ -26,7 +27,7 @@ export default function TechBanner() {
   }, []);
 
   return (
-    <div className="overflow-hidden py-8 bg-gray-900">
+    <div className="overflow-hidden border-y border-slate-800 bg-[#0b0b0b] py-8 text-[#f8f4ee] shadow-[0_12px_40px_rgba(0,0,0,0.6)]">
       <style>
         {`
           @keyframes scroll {
@@ -51,7 +52,7 @@ export default function TechBanner() {
           {[...technologies, ...technologies].map((tech, i) => (
             <span 
               key={i} 
-              className="inline-block mx-8 text-base md:text-xl font-bold text-white/80 hover:text-white transition-colors"
+              className="mx-4 inline-flex items-center rounded-full border border-slate-800 bg-[#071026] px-4 py-2 text-base font-semibold text-white/70 transition-colors hover:bg-[#0b1220] md:mx-6 md:text-xl"
             >
               {tech}
             </span>
@@ -60,10 +61,10 @@ export default function TechBanner() {
       </div>
       <div className="relative mt-4">
         <div ref={row2Ref} className="tech-banner">
-          {[...technologies.reverse(), ...technologies].map((tech, i) => (
+          {[...reversedTechnologies, ...technologies].map((tech, i) => (
             <span 
               key={i} 
-              className="inline-block mx-8 text-base md:text-xl font-bold text-white/80 hover:text-white transition-colors"
+              className="mx-4 inline-flex items-center rounded-full border border-slate-800 bg-[#071026] px-4 py-2 text-base font-semibold text-white/70 transition-colors hover:bg-[#0b1220] md:mx-6 md:text-xl"
             >
               {tech}
             </span>

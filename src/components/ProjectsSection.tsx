@@ -27,16 +27,16 @@ export default function ProjectsSection() {
   };
 
   return (
-    <section id="projects" className="bg-white py-12">
-      <div className="max-w-7xl mx-auto px-4">
+    <section id="projects" className="relative py-20 md:py-28">
+      <div className="mx-auto max-w-7xl px-4">
         <SectionHeader 
           title="SELECTED"
           subtitle="PROJECTS"
-          accentColor="text-[#FF4D4D]"
+          accentColor="text-[#f47c57]"
         />
         
         <div className="relative">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-x-auto scrollbar-hide">
+          <div className="grid grid-cols-1 gap-8 overflow-x-auto scrollbar-hide md:grid-cols-2 lg:grid-cols-3">
             {visibleProjects.map((project) => (
               <ProjectCard key={project.id} {...project} />
             ))}

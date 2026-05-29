@@ -9,8 +9,8 @@ import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
-    <main className="cursor-pizza">
-      <Navbar />
+    <main className="relative isolate overflow-hidden text-white">
+
       <HeroSection />
       <ProjectsSection />
       <TechBanner />
